@@ -52,7 +52,19 @@ namespace GoogleHashCode
                         fine:intersezioni.Find(i=>i.id==fine)
                     ));
                 }else{
-                    //macchine.Add(new Macchina());
+                    List<String> nomi=new List<string>();
+                    List<Strada> tmpStrade= new List<Strada>();
+                    bool firstMacchina=true;
+                    foreach(String s in line.Split(" ")){
+                        if(firstMacchina)
+                           firstMacchina=false;
+                        else{
+                            tmpStrade.Add(
+                                strade.Find(p=>p.nome==s)
+                            );
+                        } 
+                    }
+                    macchine.Add(new Macchina(tmpStrade));
                 }
                 i++;
             }
