@@ -7,14 +7,10 @@ class Intersezione {
     List<Strada> l_strade;
     private static int temp = 0;
 
-    public Intersezione (List <Strada> l) {
-        id = crea_id ();
+    public Intersezione (String id, List <Strada> l) {
+        this.id = id;
         l_strade = l;
     }
 
-    private String crea_id () {
-        String res=String.Concat("Intersezione", temp.ToString());
-        temp++;
-        return res;
-    }
+    
 }
