@@ -12,6 +12,7 @@ namespace GoogleHashCode
         List<Strada> percorso = new List<Strada>();
         public static int targa = 0;
         public int posCoda;
+        public int priorita;
 
         public Macchina(List<Strada> p)
         {
@@ -54,7 +55,7 @@ namespace GoogleHashCode
             }
         }
         public int calcolaTPercorso(){
-            int tTotale=0;
+            int tTotale=1;
             bool first=true;
             foreach (Strada item in this.percorso)
             {
@@ -65,6 +66,23 @@ namespace GoogleHashCode
                 }
             }
             return tTotale;
+        }
+        public void SetPriorita(int durataSimulazione, int bonus){
+            if(calcolaTPercorso()>durataSimulazione){
+                this.priorita=0;
+            }else {
+                this.priorita=(durataSimulazione-calcolaTPercorso())+bonus;
+                foreach (Strada item in percorso)
+                {
+                    this.priorita-=item.semaforo.coda.Count;
+                }
+            }
+        }
+        public void AbbassaPriorita(){
+            this.priorita=(this.priorita>1?-1:0);
+        }
+        public void AlzaPriorita(){
+            this.priorita++;
         }
     }
 }
