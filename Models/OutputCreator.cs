@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,14 +10,14 @@ namespace GoogleHashCode
         private List<List<string>> righe_semaforo_singolo;
         public OutputCreator(int numero_di_incroci_gestiti)
         {
-            this.prima_riga = numero_di_incroci_gestiti;
+            this.prima_riga = numero_di_incroci_gestiti.ToString();
             righe_semaforo_singolo = new List<List<string>>();
         }
         public void AddProgrammaIntersezione(Intersezione intersezione)
         {
             List<string> programma_intersezione = new List<String>();
-            programma_intersezione.Add(intersezione.id);
-            programma_intersezione.Add(intersezione.l_strade_in.Count);
+            programma_intersezione.Add(intersezione.id.ToString());
+            programma_intersezione.Add(intersezione.l_strade_in.Count.ToString());
             foreach (Strada strada in intersezione.l_strade_in)
             {
                 programma_intersezione.Add(strada.nome + strada.semaforo.TVerde);
