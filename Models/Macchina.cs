@@ -14,7 +14,7 @@ class Macchina {
     }
 
     public String Crea_id() {
-        String res=String.Concat("car", targa.ToString());
+        String res=String.Concat("Macchina", targa.ToString());
         targa++;
         return res;
     }
