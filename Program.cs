@@ -18,7 +18,8 @@ namespace GoogleHashCode
             List<Intersezione> intersezioni=new List<Intersezione>();
             List<Macchina> macchine= new List<Macchina>();
             fillData(ref firstLine,ref DurataSimulazione,ref n_macchine,ref n_Intersezioni,ref n_streets,ref score,ref strade,ref intersezioni,ref macchine);
-            runSimulation();
+            Gestore_By_Andrea gestore = new Gestore_By_Andrea(DurataSimulazione, intersezioni);
+            gestore.RunSimulation();
         }
         private static void fillData(ref bool firstLine,ref int DurataSimulazione,ref int n_macchine,ref int n_Intersezioni,ref int n_streets,ref int score,ref List<Strada> strade,ref List<Intersezione> intersezioni,ref List<Macchina> macchine){
             int i=0;
