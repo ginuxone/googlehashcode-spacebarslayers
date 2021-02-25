@@ -1,21 +1,21 @@
-class Macchina
-{
+using System;
+using GoogleHashCode;
+
+class Macchina {
     int stato;
-    String id;
-    Street[] percorso;
-    private static int targa = 0;
+    public String id;
+    Strada[] percorso;
+    public static int targa = 0;
 
-    public Macchina(Street[] p)
-    {
-        id = crea_id();
+    public Macchina (Strada [] p) {
+        id=this.Crea_id();
         percorso = p;
-        stato = 1;
-
+        stato= 1;
     }
 
-    private crea_id()
-    {
-        return String.concat("car", String.toString(++targa));
+    public String Crea_id() {
+        String res=String.Concat("car", targa.ToString());
+        targa++;
+        return res;
     }
-
 }
