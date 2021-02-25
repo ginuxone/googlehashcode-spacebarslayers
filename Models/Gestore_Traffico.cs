@@ -8,5 +8,7 @@ class Gestore_Traffico {
 
     public int tempoBonus;
 
-    public Gestore_Traffico ()
+    public Gestore_Traffico () {
+        
+    }
 }

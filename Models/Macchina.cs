@@ -17,7 +17,7 @@ namespace GoogleHashCode
             id = this.Crea_id();
             percorso = p;
             stimato = 0;
-            posCoda = //   TODO
+            posCoda = targa 
         }
 
         public String Crea_id()
