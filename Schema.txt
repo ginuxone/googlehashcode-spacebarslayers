@@ -12,9 +12,9 @@
 	
 -Semaforo
 	Bool Stato
+    List Macchina
 
 -Macchina 
-    int posCoda
 	String id
 	array [Street]
 	int stimato // indica i secondi per arrivare a fine strade
