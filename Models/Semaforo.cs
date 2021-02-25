@@ -20,7 +20,7 @@ class Semaforo
         int ris = 0;
         foreach (Macchina item in coda)
         {
-            ris+=item.priorita;//(coda.Items(i).priorita > ris)
+            ris+=item.priorita;
         }
         return ris;
     }
