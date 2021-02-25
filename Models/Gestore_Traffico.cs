@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using GoogleHashCode;
 
 class Gestore_Traffico {
-    public List <Intersezione> lista = new List <Intersezione>();
+    public List <Intersezione> lista_Intersezioni = new List <Intersezione>();
+
+    public List <Macchina> lista_MacchineTragitto = new List<Macchina> ();
     public int durataSimulazione;
     public Gestore_Traffico (int durataSimulazione) {
         this.durataSimulazione= durataSimulazione;
@@ -13,5 +15,5 @@ class Gestore_Traffico {
         lista.Add(i);
     }
 
-    
+   
 }

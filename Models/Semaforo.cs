@@ -16,7 +16,7 @@ class Semaforo
         priorita = 0;
     }
 
-    public int CalcolaPriorita () {
+    private int CalcolaPriorita () {
         int ris = 0;
         foreach (Macchina item in coda)
         {
