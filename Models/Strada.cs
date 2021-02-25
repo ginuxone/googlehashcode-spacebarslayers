@@ -4,7 +4,7 @@ namespace GoogleHashCode
     {
         public String nome;
         public Semaforo semaforo;
-        public int lunghezza;
+        public int TPercorrenza;
         public Intersezione inizio;
         public Intersezione fine;
 
