@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using GoogleHashCode;
 
 class Intersezione {
-    String id;
-    List<Strada> l_strade_in;
-    List<Strada> l_strade_out;
+    public int id;
+    public List<Strada> l_strade_in;
+    public List<Strada> l_strade_out;
 
-    public Intersezione (String id) {
+    public Intersezione (int id) {
         this.id = id;
     }
 
