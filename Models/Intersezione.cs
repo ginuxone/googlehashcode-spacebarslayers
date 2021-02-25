@@ -4,15 +4,18 @@ using GoogleHashCode;
 
 class Intersezione {
     String id;
-    List<Strada> l_strade;
+    List<Strada> l_strade_in;
+    List<Strada> l_strade_out;
 
-    public Intersezione (String id, List <Strada> l) {
+    public Intersezione (String id) {
         this.id = id;
-        l_strade = l;
     }
 
-    public void add (Strada s) {
-        l_strade.add(s);
+    public void addStradaIN (Strada s) {
+        l_strade_in.Add(s);
+    }
+    public void addStradaout (Strada s) {
+        l_strade_out.Add(s);
     }
 
 }
