@@ -12,5 +12,8 @@ class Intersezione {
         l_strade = l;
     }
 
-    
+    public void add (Strada s) {
+        l_strade.add(s);
+    }
+
 }
