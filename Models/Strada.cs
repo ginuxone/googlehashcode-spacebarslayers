@@ -4,13 +4,13 @@ namespace GoogleHashCode
 {
     class Strada
     {
-        public String nome;
+        public int nome;
         public Semaforo semaforo;
         public int TPercorrenza;
         public Intersezione inizio;
         public Intersezione fine;
 
-        public Strada(String nome,Semaforo semaforo, int TPercorrenza,Intersezione inizio, Intersezione fine) {
+        public Strada(int nome,Semaforo semaforo, int TPercorrenza,Intersezione inizio, Intersezione fine) {
             this.nome=nome;
             this.semaforo=semaforo;
             this.TPercorrenza=TPercorrenza;
