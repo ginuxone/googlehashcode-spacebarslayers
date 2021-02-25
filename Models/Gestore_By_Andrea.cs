@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using GoogleHashCode;
 
+namespace GoogleHashCode{
 class Gestore_Traffico {
     public List <Intersezione> lista_Intersezioni = new List <Intersezione>();
 
@@ -9,9 +10,10 @@ class Gestore_Traffico {
     public int durataSimulazione;
 
     public int score;
-    public Gestore_Traffico (int durataSimulazione) {
+    public Gestore_Traffico (int durataSimulazione, List<Intersezione> listIntersezioni) {
         score = 0;
         this.durataSimulazione= durataSimulazione;
+        this.lista_Intersezioni = listIntersezioni;
     }
 
     public void addIntersezione (Intersezion i) {
@@ -25,7 +27,7 @@ class Gestore_Traffico {
 
             foreach (Intersezione i in lista_Intersezioni) {
                 Semaforo* maxP_Semaforo= null; 
-                foreach (Strada s in i) {
+                foreach (Strada s in i.l_strade_in) {
                     s.semaforo.stato = false;
 
                     if (maxP_Semaforo == null || *maxP_Semaforo.priorita < s.semaforo.priorita) 
@@ -60,5 +62,7 @@ class Gestore_Traffico {
             }
             --durataSimulazione;
         }
+        Console.WriteLine("score : " + score);
     }
+}
 }
