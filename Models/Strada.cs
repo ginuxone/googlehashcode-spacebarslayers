@@ -1,3 +1,5 @@
+using System;
+
 namespace GoogleHashCode
 {
     class Strada
@@ -8,6 +10,12 @@ namespace GoogleHashCode
         public Intersezione inizio;
         public Intersezione fine;
 
-        public Strada() { }
+        public Strada(String nome,Semaforo semaforo, int TPercorrenza,Intersezione inizio, Intersezione fine) {
+            this.nome=nome;
+            this.semaforo=semaforo;
+            this.TPercorrenza=TPercorrenza;
+            this.inizio=inizio;
+            this.fine=fine;
+        }
     }
 }
