@@ -21,3 +21,5 @@
 	int stimato // indica i secondi per arrivare a fine strade
 
 
+-Gestore_Traffico
+    List <Incrocio>
