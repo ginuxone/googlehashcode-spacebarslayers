@@ -10,10 +10,11 @@ namespace GoogleHashCode
         {   
             bool firstLine=true;
             int DurataSimulazione=0;
-            fillData(firstLine,DurataSimulazione);
+            int n_Intersezioni=0;
+            fillData(firstLine,DurataSimulazione,n_Intersezioni);
             runSimulation();
         }
-        private static void fillData(bool firstLine,int DurataSimulazione){
+        private static void fillData(bool firstLine,int DurataSimulazione,int n_Intersezioni){
             foreach (String line in System.IO.File.ReadLines("./InputFile/a.txt"))
             {
 

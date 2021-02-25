@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\GoogleHashCode\\GoogleHashCode.csproj",
+      "projectUniqueName": "D:\\Source\\googlehashcode-spacebarslayers\\GoogleHashCode.csproj",
       "projectName": "GoogleHashCode",
-      "projectPath": "D:\\Source\\GoogleHashCode\\GoogleHashCode.csproj",
+      "projectPath": "D:\\Source\\googlehashcode-spacebarslayers\\GoogleHashCode.csproj",
       "packagesPath": "C:\\Users\\ginit\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\GoogleHashCode\\obj\\",
+      "outputPath": "D:\\Source\\googlehashcode-spacebarslayers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
