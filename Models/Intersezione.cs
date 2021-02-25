@@ -4,8 +4,8 @@ using GoogleHashCode;
 
 class Intersezione {
     public int id;
-    public List<Strada> l_strade_in=new List<Strada>();
-    public List<Strada> l_strade_out=new List<Strada>();
+    public List<Strada> l_strade_in= new List<Strada>();
+    public List<Strada> l_strade_out= new List<Strada>();
 
     public Intersezione (int id) {
         this.id = id;
