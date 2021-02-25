@@ -1,31 +1,33 @@
 using System.Collections.Generic;
 using GoogleHashCode;
+using System.Linq;
 
 class Semaforo
 {
     public bool stato; // (false= red , true= red)
     public int TVerde;
     public List<Macchina> coda = new List<Macchina> ();
-    int priorita;
+    public int priorita;
 
     public Semaforo()
     {
         stato = false;
         TVerde = 0;
-        priorità = 0;
+        priorita = 0;
     }
 
-    private calcolaPriorita () {
+    private int CalcolaPriorita () {
         int ris = 0;
-
-        for (int i= 0; i< coda.Count(); i++) {
-            ris += coda.Items(i); //(coda.Items(i).priorita > ris)
+        foreach (Macchina item in coda)
+        {
+            ris+=item.priorita;//(coda.Items(i).priorita > ris)
         }
         return ris;
     }
 
     public void addinCoda (Macchina m) {
         coda.Add(m);
+        priorita=CalcolaPriorita();
     }
 
     public void pop () {
