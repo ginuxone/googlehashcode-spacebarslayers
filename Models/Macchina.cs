@@ -10,12 +10,14 @@ namespace GoogleHashCode
         public String id;
         List<Strada> percorso = new List<Strada>();
         public static int targa = 0;
+        public int posCoda;
 
         public Macchina(List<Strada> p)
         {
             id = this.Crea_id();
             percorso = p;
             stimato = 0;
+            posCoda = //   TODO
         }
 
         public String Crea_id()

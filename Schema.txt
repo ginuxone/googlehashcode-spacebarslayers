@@ -5,7 +5,6 @@
 	Intersezione 1 (inizio)
 	Intersezione 2 (fine)
 
-
 -Intersezione 
 	String Id
 	Array [Street]
@@ -13,9 +12,9 @@
 	
 -Semaforo
 	Bool Stato
-	coda [Macchine]
 
 -Macchina 
+    int posCoda
 	String id
 	array [Street]
 	int stimato // indica i secondi per arrivare a fine strade
