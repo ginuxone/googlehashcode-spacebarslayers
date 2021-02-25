@@ -1,6 +1,9 @@
+using System;
+using System.Collections.Generic;
+using GoogleHashCode;
 class Intersezione {
     String id;
-    Stada [] strade;
+    List<Strada> strade;
     private static int temp = 0;
 
     public Intersezione () {
@@ -8,6 +11,8 @@ class Intersezione {
     }
 
     private String crea_id () {
-    return String.concat("Intersezione", String.toString(++temp));
+        String res=String.Concat("Intersezione", temp.ToString()));
+        temp++;
+        return res;
     }
 }
