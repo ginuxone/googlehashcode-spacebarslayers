@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using GoogleHashCode;
 
 namespace GoogleHashCode
@@ -18,7 +17,7 @@ namespace GoogleHashCode
             id = this.Crea_id();
             percorso = p;
             stimato = 0;
-            posCoda = 0;//   TODO
+            posCoda = //   TODO
         }
 
         public String Crea_id()
@@ -47,7 +46,8 @@ namespace GoogleHashCode
             {
                 percorso.RemoveAt(0);
                 if (percorso.Count > 0)
-                stimato=percorso.First().TPercorrenza;
+                    stimato = percorso.Items(0).TPercorrenza;
+
                 else
                     stimato = -1; // percorso concluso
             }
