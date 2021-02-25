@@ -2,15 +2,15 @@ using System;
 using GoogleHashCode;
 
 class Macchina {
-    int stato;
+    int stimato; // indica i secondi per arrivare a fine strade
     public String id;
-    Strada[] percorso;
+    List<Strada> percorso;
     public static int targa = 0;
 
-    public Macchina (Strada [] p) {
+    public Macchina (List <Strada> p) {
         id=this.Crea_id();
         percorso = p;
-        stato= 1;
+        stimato= 0;
     }
 
     public String Crea_id() {
