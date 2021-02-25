@@ -1,0 +1,16 @@
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.exe
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.deps.json
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.runtimeconfig.json
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.runtimeconfig.dev.json
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.dll
+D:\Source\GoogleHashCode\bin\Debug\net5.0\ref\GoogleHashCode.dll
+D:\Source\GoogleHashCode\bin\Debug\net5.0\GoogleHashCode.pdb
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.csprojAssemblyReference.cache
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.AssemblyInfoInputs.cache
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.AssemblyInfo.cs
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.csproj.CoreCompileInputs.cache
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.dll
+D:\Source\GoogleHashCode\obj\Debug\net5.0\ref\GoogleHashCode.dll
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.pdb
+D:\Source\GoogleHashCode\obj\Debug\net5.0\GoogleHashCode.genruntimeconfig.cache
