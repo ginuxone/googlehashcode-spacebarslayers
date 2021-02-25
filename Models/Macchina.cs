@@ -53,5 +53,17 @@ namespace GoogleHashCode
                     stimato = -1; // percorso concluso
             }
         }
+        public void calcolaTPercorso(){
+            int tTotale=0;
+            bool first=true;
+            foreach (Strada item in this.percorso)
+            {
+                if(first){
+                    first=false;
+                }else{
+                    tTotale=item.TPercorrenza+1;
+                }
+            }
+        }
     }
 }
