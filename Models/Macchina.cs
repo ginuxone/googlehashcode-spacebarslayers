@@ -47,7 +47,7 @@ namespace GoogleHashCode
             {
                 percorso.RemoveAt(0);
                 if (percorso.Count > 0)
-                    stimato = percorso.First().TPercorrenza+ 1;
+                    stimato = percorso.First().TPercorrenza;
 
                 else
                     stimato = -1; // percorso concluso
