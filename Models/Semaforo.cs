@@ -1,6 +1,6 @@
 class Semaforo {
-    bool stato; // (false= red , true= red)
-    Macchina [] coda;
+    public bool stato; // (false= red , true= red)
+    public List <Macchina> coda;
 
     public Semaforo () {
         stato= false;
