@@ -11,7 +11,7 @@ class Intersezione {
     }
 
     private String crea_id () {
-        String res=String.Concat("Intersezione", temp.ToString()));
+        String res=String.Concat("Intersezione", temp.ToString());
         temp++;
         return res;
     }
