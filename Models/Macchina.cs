@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GoogleHashCode;
 
 namespace GoogleHashCode
@@ -7,7 +8,7 @@ namespace GoogleHashCode
     {
         int stimato; // indica i secondi per arrivare a fine strade
         public String id;
-        List<Strada> percorso;
+        List<Strada> percorso = new List<Strada>();
         public static int targa = 0;
 
         public Macchina(List<Strada> p)
