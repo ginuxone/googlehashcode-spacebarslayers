@@ -13,6 +13,7 @@
 -Semaforo
 	Bool Stato
     List Macchina
+    int priorita
 
 -Macchina 
 	String id
